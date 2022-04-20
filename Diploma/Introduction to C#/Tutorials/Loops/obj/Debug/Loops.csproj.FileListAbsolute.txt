@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\bin\Debug\Loops.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\bin\Debug\Loops.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\bin\Debug\Loops.pdb
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\obj\Debug\Loops.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\obj\Debug\Loops.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\obj\Debug\Loops.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\obj\Debug\Loops.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Loops\obj\Debug\Loops.pdb

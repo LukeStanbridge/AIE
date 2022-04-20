@@ -1,0 +1,8 @@
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\bin\Debug\AIE_xx_SaveContactList.exe.config
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\bin\Debug\AIE_xx_SaveContactList.exe
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\bin\Debug\AIE_xx_SaveContactList.pdb
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\obj\Debug\AIE_xx_SaveContactList.csproj.AssemblyReference.cache
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\obj\Debug\AIE_xx_SaveContactList.csproj.SuggestedBindingRedirects.cache
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\obj\Debug\AIE_xx_SaveContactList.csproj.CoreCompileInputs.cache
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\obj\Debug\AIE_xx_SaveContactList.exe
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_SaveContactList\AIE_xx_SaveContactList\obj\Debug\AIE_xx_SaveContactList.pdb

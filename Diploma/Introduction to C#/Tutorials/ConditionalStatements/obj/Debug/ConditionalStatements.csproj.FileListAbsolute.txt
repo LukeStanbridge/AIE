@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\bin\Debug\ConditionalStatements.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\bin\Debug\ConditionalStatements.exe
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\bin\Debug\ConditionalStatements.pdb
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\obj\Debug\ConditionalStatements.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\obj\Debug\ConditionalStatements.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\obj\Debug\ConditionalStatements.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\obj\Debug\ConditionalStatements.exe
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ConditionalStatements\obj\Debug\ConditionalStatements.pdb

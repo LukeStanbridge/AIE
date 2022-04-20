@@ -1,0 +1,8 @@
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\bin\Debug\AIE_xx_HighScoreTable.exe.config
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\bin\Debug\AIE_xx_HighScoreTable.exe
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\bin\Debug\AIE_xx_HighScoreTable.pdb
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\obj\Debug\AIE_xx_HighScoreTable.csproj.AssemblyReference.cache
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\obj\Debug\AIE_xx_HighScoreTable.csproj.SuggestedBindingRedirects.cache
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\obj\Debug\AIE_xx_HighScoreTable.csproj.CoreCompileInputs.cache
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\obj\Debug\AIE_xx_HighScoreTable.exe
+C:\Users\bridg\Desktop\AIE\Diploma\Introduction to C#\Exercises\AIE_xx_HighScoreTable\obj\Debug\AIE_xx_HighScoreTable.pdb

@@ -1,0 +1,51 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6498e929-bda8-49fb-abd7-105fe54dd076": {
+      "ProjectGuid": "6498e929-bda8-49fb-abd7-105fe54dd076",
+      "DisplayName": "ExercisesOnArrays",
+      "ColorIndex": 0
+    },
+    "72445892-b925-46b5-b059-fadc76ddad46": {
+      "ProjectGuid": "72445892-b925-46b5-b059-fadc76ddad46",
+      "DisplayName": "Introductory Exercises",
+      "ColorIndex": 1
+    },
+    "be774a7d-a773-4f7b-914e-282fa16b7d57": {
+      "ProjectGuid": "be774a7d-a773-4f7b-914e-282fa16b7d57",
+      "DisplayName": "ExercisesOnFiles",
+      "ColorIndex": 2
+    },
+    "3fb2bd27-f41a-46f4-ae22-371e1ff37cc8": {
+      "ProjectGuid": "3fb2bd27-f41a-46f4-ae22-371e1ff37cc8",
+      "DisplayName": "ExercisesOnClasses",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "ce0be34d-bd29-4b0c-9bd4-255504a0e685": {
+      "ProjectGuid": "ce0be34d-bd29-4b0c-9bd4-255504a0e685",
+      "DisplayName": "ExercisesOnFiles",
+      "ColorIndex": 4
+    },
+    "7ede6b3a-c49c-4bf5-9999-6720573ba08b": {
+      "ProjectGuid": "7ede6b3a-c49c-4bf5-9999-6720573ba08b",
+      "DisplayName": "ExercisesOnFiles",
+      "ColorIndex": 5
+    },
+    "2f168be9-b723-4c79-8108-25140e8e420b": {
+      "ProjectGuid": "2f168be9-b723-4c79-8108-25140e8e420b",
+      "DisplayName": "ExercisesOnClasses",
+      "ColorIndex": 6
+    },
+    "bd347943-4711-40b5-add0-505718d58047": {
+      "ProjectGuid": "bd347943-4711-40b5-add0-505718d58047",
+      "DisplayName": "AdventureGame",
+      "ColorIndex": 7
+    }
+  },
+  "NextColorIndex": 8
+}

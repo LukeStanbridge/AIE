@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\bin\Debug\ExercisesOnFiles.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\bin\Debug\ExercisesOnFiles.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\bin\Debug\ExercisesOnFiles.pdb
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\obj\Debug\ExercisesOnFiles.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\obj\Debug\ExercisesOnFiles.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\obj\Debug\ExercisesOnFiles.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\obj\Debug\ExercisesOnFiles.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnFiles\obj\Debug\ExercisesOnFiles.pdb

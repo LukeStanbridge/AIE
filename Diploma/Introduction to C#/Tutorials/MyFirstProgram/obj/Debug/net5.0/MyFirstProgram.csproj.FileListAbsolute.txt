@@ -1,0 +1,16 @@
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.exe
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.deps.json
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.runtimeconfig.json
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.runtimeconfig.dev.json
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.dll
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\bin\Debug\net5.0\ref\MyFirstProgram.dll
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\bin\Debug\net5.0\MyFirstProgram.pdb
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.AssemblyInfoInputs.cache
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.AssemblyInfo.cs
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.dll
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\ref\MyFirstProgram.dll
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.pdb
+C:\Users\s213090\Documents\Game Programming\MyFirstProgram\obj\Debug\net5.0\MyFirstProgram.genruntimeconfig.cache

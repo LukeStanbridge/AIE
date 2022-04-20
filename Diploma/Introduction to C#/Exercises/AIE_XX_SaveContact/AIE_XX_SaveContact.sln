@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIE_XX_SaveContact", "AIE_XX_SaveContact.csproj", "{D1B9AB71-DCAD-4E89-97E8-EDE83B1DCA72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1B9AB71-DCAD-4E89-97E8-EDE83B1DCA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1B9AB71-DCAD-4E89-97E8-EDE83B1DCA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1B9AB71-DCAD-4E89-97E8-EDE83B1DCA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1B9AB71-DCAD-4E89-97E8-EDE83B1DCA72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D740A3EA-2952-4F0B-A9EF-E7EF8BB88BC3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\obj\Debug\FunctionsExercise.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\obj\Debug\FunctionsExercise.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\obj\Debug\FunctionsExercise.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\bin\Debug\FunctionsExercise.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\bin\Debug\FunctionsExercise.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\bin\Debug\FunctionsExercise.pdb
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\obj\Debug\FunctionsExercise.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\FunctionsExercise\obj\Debug\FunctionsExercise.pdb

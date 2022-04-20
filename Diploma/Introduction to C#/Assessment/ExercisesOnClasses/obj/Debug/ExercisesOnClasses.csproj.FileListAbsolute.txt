@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\bin\Debug\ExercisesOnClasses.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\bin\Debug\ExercisesOnClasses.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\bin\Debug\ExercisesOnClasses.pdb
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\obj\Debug\ExercisesOnClasses.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\obj\Debug\ExercisesOnClasses.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\obj\Debug\ExercisesOnClasses.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\obj\Debug\ExercisesOnClasses.pdb
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnClasses\obj\Debug\ExercisesOnClasses.csproj.AssemblyReference.cache

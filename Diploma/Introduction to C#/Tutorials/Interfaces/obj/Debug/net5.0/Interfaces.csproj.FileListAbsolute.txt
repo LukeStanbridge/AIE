@@ -1,0 +1,16 @@
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.AssemblyInfoInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.AssemblyInfo.cs
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\bin\Debug\net5.0\Interfaces.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\bin\Debug\net5.0\Interfaces.deps.json
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\bin\Debug\net5.0\Interfaces.runtimeconfig.json
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\bin\Debug\net5.0\Interfaces.runtimeconfig.dev.json
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\bin\Debug\net5.0\Interfaces.dll
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\bin\Debug\net5.0\ref\Interfaces.dll
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\bin\Debug\net5.0\Interfaces.pdb
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.dll
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\ref\Interfaces.dll
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.pdb
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Interfaces\obj\Debug\net5.0\Interfaces.genruntimeconfig.cache

@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\bin\Debug\ExercisesOnArrays.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\bin\Debug\ExercisesOnArrays.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\bin\Debug\ExercisesOnArrays.pdb
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\obj\Debug\ExercisesOnArrays.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\obj\Debug\ExercisesOnArrays.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\obj\Debug\ExercisesOnArrays.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\obj\Debug\ExercisesOnArrays.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\ExercisesOnArrays\obj\Debug\ExercisesOnArrays.pdb

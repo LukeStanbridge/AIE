@@ -1,0 +1,16 @@
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\bin\Debug\net5.0\Task3_Files_Exercise1.exe
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\bin\Debug\net5.0\Task3_Files_Exercise1.deps.json
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\bin\Debug\net5.0\Task3_Files_Exercise1.runtimeconfig.json
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\bin\Debug\net5.0\Task3_Files_Exercise1.runtimeconfig.dev.json
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\bin\Debug\net5.0\Task3_Files_Exercise1.dll
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\bin\Debug\net5.0\ref\Task3_Files_Exercise1.dll
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\bin\Debug\net5.0\Task3_Files_Exercise1.pdb
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.csproj.AssemblyReference.cache
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.AssemblyInfoInputs.cache
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.AssemblyInfo.cs
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.dll
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\ref\Task3_Files_Exercise1.dll
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.pdb
+C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\obj\Debug\net5.0\Task3_Files_Exercise1.genruntimeconfig.cache

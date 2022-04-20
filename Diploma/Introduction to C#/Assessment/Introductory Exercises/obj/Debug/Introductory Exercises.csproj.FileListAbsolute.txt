@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\bin\Debug\Introductory Exercises.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\bin\Debug\Introductory Exercises.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\bin\Debug\Introductory Exercises.pdb
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\obj\Debug\Introductory Exercises.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\obj\Debug\Introductory Exercises.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\obj\Debug\Introductory Exercises.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\obj\Debug\Introductory Exercises.exe
+C:\Users\s213090\Documents\Introduction to C#\Assessment\Introductory Exercises\obj\Debug\Introductory Exercises.pdb

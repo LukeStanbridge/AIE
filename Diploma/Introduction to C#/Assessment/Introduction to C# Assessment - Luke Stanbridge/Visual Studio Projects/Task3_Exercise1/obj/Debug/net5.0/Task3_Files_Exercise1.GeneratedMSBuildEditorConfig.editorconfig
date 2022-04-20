@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Task3_Files_Exercise1
+build_property.ProjectDir = C:\Users\s213090\Desktop\Introduction to C# Assessment - Luke Stanbridge\Visual Studio Projects\Task3_Exercise1\

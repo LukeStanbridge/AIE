@@ -1,0 +1,7 @@
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\LoopsExercise\bin\Debug\LoopsExercise.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\LoopsExercise\bin\Debug\LoopsExercise.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\LoopsExercise\bin\Debug\LoopsExercise.pdb
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\LoopsExercise\obj\Debug\LoopsExercise.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\LoopsExercise\obj\Debug\LoopsExercise.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\LoopsExercise\obj\Debug\LoopsExercise.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\LoopsExercise\obj\Debug\LoopsExercise.pdb

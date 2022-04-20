@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\bin\Debug\ParameterPassing.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\bin\Debug\ParameterPassing.exe
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\bin\Debug\ParameterPassing.pdb
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\obj\Debug\ParameterPassing.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\obj\Debug\ParameterPassing.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\obj\Debug\ParameterPassing.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\obj\Debug\ParameterPassing.exe
+C:\Users\s213090\Documents\Introduction to C#\Exercises\ParameterPassing\obj\Debug\ParameterPassing.pdb

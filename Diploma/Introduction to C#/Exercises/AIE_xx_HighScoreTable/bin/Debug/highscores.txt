@@ -1,0 +1,5 @@
+bob 12
+fred 20
+ted 6
+tom 42
+harry 9

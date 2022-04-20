@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "d1afd02c-1907-4d32-b073-7e130797d91d": {
+      "ProjectGuid": "d1afd02c-1907-4d32-b073-7e130797d91d",
+      "DisplayName": "AdventureGame",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

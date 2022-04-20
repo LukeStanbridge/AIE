@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\bin\Debug\IfStatementExercise.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\bin\Debug\IfStatementExercise.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\bin\Debug\IfStatementExercise.pdb
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\obj\Debug\IfStatementExercise.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\obj\Debug\IfStatementExercise.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\obj\Debug\IfStatementExercise.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\obj\Debug\IfStatementExercise.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\IfStatementExercise\obj\Debug\IfStatementExercise.pdb

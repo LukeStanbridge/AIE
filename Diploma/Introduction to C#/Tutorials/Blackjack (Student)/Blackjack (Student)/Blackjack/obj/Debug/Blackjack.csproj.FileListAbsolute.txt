@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\obj\Debug\Blackjack.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\obj\Debug\Blackjack.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\obj\Debug\Blackjack.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\bin\Debug\Blackjack.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\bin\Debug\Blackjack.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\bin\Debug\Blackjack.pdb
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\obj\Debug\Blackjack.exe
+C:\Users\s213090\Documents\Introduction to C#\Tutorials\Blackjack (Student)\Blackjack (Student)\Blackjack\obj\Debug\Blackjack.pdb

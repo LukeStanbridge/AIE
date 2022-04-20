@@ -1,0 +1,8 @@
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\bin\Debug\AIE_XX_SaveContact.exe.config
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\bin\Debug\AIE_XX_SaveContact.exe
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\bin\Debug\AIE_XX_SaveContact.pdb
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\obj\Debug\AIE_XX_SaveContact.csproj.AssemblyReference.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\obj\Debug\AIE_XX_SaveContact.csproj.SuggestedBindingRedirects.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\obj\Debug\AIE_XX_SaveContact.csproj.CoreCompileInputs.cache
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\obj\Debug\AIE_XX_SaveContact.exe
+C:\Users\s213090\Documents\Introduction to C#\Exercises\AIE_XX_SaveContact\obj\Debug\AIE_XX_SaveContact.pdb
