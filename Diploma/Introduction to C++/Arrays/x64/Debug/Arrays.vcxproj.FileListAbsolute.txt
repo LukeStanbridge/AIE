@@ -1,0 +1,2 @@
+C:\Users\bridg\Desktop\Introduction to C++\Arrays\x64\Debug\Arrays.exe
+C:\Users\s213090\Documents\Introduction to C++\Arrays\x64\Debug\Arrays.exe

@@ -1,0 +1,21 @@
+﻿  2-Variables.cpp
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(184,9): warning C4091: '': ignored on left of 'void' when no variable is declared
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(180,10): warning C4101: 'letter': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(185,9): warning C4101: 'arr': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(168,9): warning C4101: 'qty': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(179,11): warning C4101: 'num2': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(167,11): warning C4101: 'dogYears': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(166,9): warning C4101: 'bulletCount': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(181,12): warning C4101: 'num3': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(165,9): warning C4101: 'age1': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(183,10): warning C4101: 'question': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(174,9): warning C4101: 'gandhiAggression': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(173,9): warning C4101: 'happiness': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(186,10): warning C4101: 'ptr': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(172,11): warning C4101: 'redArmorRatio': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(171,9): warning C4101: 'redArmorValue': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(170,11): warning C4101: 'defenseMatrixCooldown': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(178,9): warning C4101: 'num': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(169,11): warning C4101: 'shieldValue': unreferenced local variable
+C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\2-Variables.cpp(182,17): warning C4101: 'num4': unreferenced local variable
+  2-Variables.vcxproj -> C:\Users\bridg\Desktop\AIE\Diploma\Maths Exercises\2-Variables\x64\Debug\2-Variables.exe

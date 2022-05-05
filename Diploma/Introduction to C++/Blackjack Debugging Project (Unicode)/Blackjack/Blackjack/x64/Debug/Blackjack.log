@@ -1,0 +1,2 @@
+﻿  main.cpp
+C:\Users\bridg\Desktop\Introduction to C++\Blackjack Debugging Project (Unicode)\Blackjack\Blackjack\main.cpp(131,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data

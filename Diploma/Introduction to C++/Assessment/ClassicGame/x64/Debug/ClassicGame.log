@@ -1,0 +1,4 @@
+﻿  ClassicGame.cpp
+C:\Users\s213090\Documents\Introduction to C++\Assessment\ClassicGame\packages\raylib.4.0.0.6\build\native\include\Functions.hpp(66,3): warning C5051: attribute 'maybe_unused' requires at least '/std:c++17'; ignored
+C:\Users\s213090\Documents\Introduction to C++\Assessment\ClassicGame\packages\raylib.4.0.0.6\build\native\include\Functions.hpp(147,3): warning C5051: attribute 'maybe_unused' requires at least '/std:c++17'; ignored
+C:\Users\s213090\Documents\Introduction to C++\Assessment\ClassicGame\packages\raylib.4.0.0.6\build\native\include\Functions.hpp(166,3): warning C5051: attribute 'maybe_unused' requires at least '/std:c++17'; ignored

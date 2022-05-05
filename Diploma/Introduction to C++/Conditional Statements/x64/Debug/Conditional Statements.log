@@ -1,0 +1,7 @@
+﻿  Conditional Statements.cpp
+C:\Users\bridg\Desktop\Introduction to C++\Conditional Statements\Conditional Statements.cpp(158,12): warning C4552: '>': result of expression not used
+C:\Users\bridg\Desktop\Introduction to C++\Conditional Statements\Conditional Statements.cpp(159,14): warning C4552: '>': result of expression not used
+C:\Users\bridg\Desktop\Introduction to C++\Conditional Statements\Conditional Statements.cpp(160,5): warning C4552: '!': result of expression not used
+C:\Users\bridg\Desktop\Introduction to C++\Conditional Statements\Conditional Statements.cpp(165,14): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\bridg\Desktop\Introduction to C++\Conditional Statements\Conditional Statements.cpp(166,14): warning C4553: '==': result of expression not used; did you intend '='?
+  Conditional Statements.vcxproj -> C:\Users\bridg\Desktop\Introduction to C++\Conditional Statements\x64\Debug\Conditional Statements.exe

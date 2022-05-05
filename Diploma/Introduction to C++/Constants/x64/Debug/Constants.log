@@ -1,0 +1,3 @@
+﻿  Constants.cpp
+C:\Users\bridg\Desktop\Introduction to C++\Constants\Constants.cpp(11,27): warning C4305: 'initializing': truncation from 'double' to 'float'
+  Constants.vcxproj -> C:\Users\bridg\Desktop\Introduction to C++\Constants\x64\Debug\Constants.exe
