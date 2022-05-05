@@ -3,22 +3,64 @@
 
 #include <iostream>
 #include <algorithm>
+#include <regex>
 
 int main()
 {
-    // print full name 
-    std::string fullName, firstName, lastName;
-    std::cout << "\nEnter first name: " << std::endl;
-    std::cin >> firstName;
-    std::cout << "\nEnter last name: " << std::endl;
-    std::cin >> lastName;
-    fullName = firstName + " " + lastName;
-    std::cout << "Your full name is: " << fullName << std::endl;
+    //// EXERCISE 1, 2, 3
+    //// print full name
+    //const int people = 5;
+    //const int names = 2;
+    //std::string fullNames[people][names];
 
-    // print string in reverse
-    reverse(fullName.begin(), fullName.end());
-    std::cout << "Name in reverse: " << fullName << std::endl;
-    return 0;
+    //for (int i = 0; i < people; i++)
+    //{
+    //    std::cout << "Enter first name, press enter, then enter last name..." << std::endl;
+    //    for (int j = 0; j < names; j++)
+    //    {          
+    //        std::cin >> fullNames[i][j];
+    //    }      
+    //}
+    //std::cout << std::endl;
+
+    //// print names 
+    //for (int i = 0; i < people; i++)
+    //{
+    //    for (int j = 0; j < names; j++)
+    //    {
+    //        std::cout << fullNames[i][j] << " ";
+    //    }
+    //    std::cout << std::endl;
+    //}
+    //std::cout << std::endl;
+
+    //// print names in reverse
+    //for (int i = 0; i < people; i++)
+    //{
+    //    for (int j = 1; j >= 0; j--)
+    //    {
+    //        reverse(fullNames[i][j].begin(), fullNames[i][j].end());
+    //        std::cout << fullNames[i][j] << " ";
+    //    }
+    //    std::cout << std::endl;
+    //}
+    //return 0;
+
+    // EXERCISE 4
+    const std::regex pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[-+_!@#$%^&*.,?]).+$");
+
+    std::string userName, password;
+    std::cout << "Enter username: " << std::endl;
+    std::cin >> userName; 
+    std::cout << "Enter password: " << std::endl;
+    std::cin >> password;
+
+    while (!(regex_match(password, pattern) && password.length() >= 8 && !password.empty()))
+    {
+        std::cout << "Please enter a Valid Password: " << std::endl;
+        std::cin >> password;
+    }
+    std::cout << "Password Accepted" << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
