@@ -4,7 +4,7 @@
 #include <iostream>
 #include <algorithm>
 #include <regex>
-#include <string>
+#include <cstring>
 
 int main()
 {
@@ -63,36 +63,42 @@ int main()
     }
     std::cout << "Password Accepted" << std::endl;*/
 
-    // EXERCISE 5
-    std::string userName, password;
-    std::string userCheck = "usr";
-    std::string pwordCheck = "Pa55w0rd";
-    std::cout << "Enter username: ";
-    std::cin >> userName;
+    //// EXERCISE 5
+    //std::string userName, password;
+    //std::string userCheck = "usr";
+    //std::string pwordCheck = "Pa55w0rd";
+    //std::cout << "Enter username: ";
+    //std::cin >> userName;
 
-    // user check and prompt
-    while (userName.find(userCheck) == std::string::npos)
-        {
-        std::cout << "Enter username contain 'usr': ";
-        std::cin >> userName;
-        }
+    //// user check and prompt
+    //while (userName.find(userCheck) == std::string::npos)
+    //    {
+    //    std::cout << "Enter username contain 'usr': ";
+    //    std::cin >> userName;
+    //    }
 
-    std::cout << "Enter password: ";
-    std::cin >> password;
+    //std::cout << "Enter password: ";
+    //std::cin >> password;
 
-    // password check and prompt
-    while (password.find(pwordCheck) == std::string::npos)
-    {
-        std::cout << "We recommend using 'Pa55w0rd, try again: ";
-        std::cin >> password;
-    }
+    //// password check and prompt
+    //while ((password != pwordCheck) && (password.length() != 8))
+    //{
+    //    std::cout << "We recommend using 'Pa55w0rd', please try again: ";
+    //    std::cin >> password;
+    //}
 
-    std::cout << "Account created." << std::endl;
+    //std::cout << "Account successfully created." << std::endl;
 
-    return 0;
+    //// prints user identifier
+    //char* char_arr;
+    //std::string identifier(userName + "-" + password);
+    //char_arr = &identifier[0];
+    //std::cout << char_arr << std::endl;
 
-    /*std::cout << "Enter password: " << std::endl;
-    std::cin >> password;*/
+    //return 0;
+
+    // EXERCISE 7
+   
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
