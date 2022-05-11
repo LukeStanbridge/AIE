@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "b79eb932-f708-4346-a3f0-13b346d04f84": {
+      "ProjectGuid": "b79eb932-f708-4346-a3f0-13b346d04f84",
+      "DisplayName": "Debugging",
+      "ColorIndex": 0
+    },
+    "7544d2ea-300c-4aeb-aa7f-438762ae001f": {
+      "ProjectGuid": "7544d2ea-300c-4aeb-aa7f-438762ae001f",
+      "DisplayName": "IntroCPP_BinaryFileIO_NPCData",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
