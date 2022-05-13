@@ -3,48 +3,68 @@
 
 #include <iostream>
 #include <fstream>
-#include <string.h>
+#include <string>
 
 int main()
 {
     int choice = 0;
     std::string append;
 
-    std::string fileName("MyLog.txt");
-    std::fstream file;  
-    file.open(fileName, std::ios::out);
-    file << "Hello world" << std::endl;
+    std::fstream file("MyLog.txt");
 
-    std::cout << "Would you like to display(1), write(2), clear(3) or quit(4) the file: ";
-    std::cin >> choice;
+    file.open("MyLog.txt", std::ios::in | std::ios::out | std::ios::app);
 
-    if (!file)
+    if (!file.is_open())
     {
-        std:: cout << "Error in creating file!!!";
-        return 0;
+        std::cout << "error while opening file" << std::endl;
     }
     else
     {
-        if (choice == 1)
-        {
-            std::cout << file.rdbuf() << std::endl;
-        }
-        else if (choice == 2)
-        {
-            
-        }
-        else if (choice == 3)
-        {
+        std::cout << "file opened successfully" << std::endl;
+        std::cout << "writing to a file" << std::endl;
 
-        }
-        else
-        {
+        file << "This is bulshit" << std::endl;
 
+        file.seekg(0);
+        std::cout << "reading from a file" << std::endl;
+        std::string line;
+
+        while (file.good())
+        {
+            getline(file, line);
+            std::cout << line << std::endl;
         }
     }
+    
+    /*std::cout << "Would you like to display(1), write(2), clear(3) or quit(4) the file: ";
+    std::cin >> choice;
+
+    if (choice == 1)
+    {
+        if (file.is_open())
+        {
+            std::cout << file.rdbuf();
+        }
+    }
+    else if (choice == 2)
+    {
+        if (file.is_open())
+        {
+            std::cout << "Appending something to the end of the file: ";          
+            file << "morn";
+            file.seekg(0);
+        }
+    }
+    else if (choice == 3)
+    {
+
+    }
+    else
+    {
+
+    }*/
 
     file.close();
-
     return 0;
 }
 
