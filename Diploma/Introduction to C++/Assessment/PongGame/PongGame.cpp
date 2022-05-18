@@ -130,6 +130,7 @@ int main()
             winnerText = "LEFT PLAYER WINS!";
         }
 
+        // reset game when space is pressed
         if (winnerText && IsKeyPressed(KEY_SPACE))
         {
             ball.x = GetScreenWidth() / 2;
@@ -149,7 +150,7 @@ int main()
 
             if (winnerText) // if not nullptr
             {
-                int textWidth = MeasureText(winnerText, 60); // gets text width for text alighnment
+                int textWidth = MeasureText(winnerText, 60); // gets text width for text alignment
                 DrawText(winnerText, GetScreenWidth() / 2 - textWidth / 2, GetScreenHeight() / 2 - 30, 60, RED); // Draws winner text
             }
 

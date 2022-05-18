@@ -1,0 +1,10 @@
+﻿  SnakeGame.cpp
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(63,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(64,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(122,46): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(123,46): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(170,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(171,22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(173,31): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\SnakeGame.cpp(173,25): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  SnakeGame.vcxproj -> C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\SnakeGame\x64\Debug\SnakeGame.exe
