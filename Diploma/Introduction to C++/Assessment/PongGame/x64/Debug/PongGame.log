@@ -1,7 +1,14 @@
 ﻿  PongGame.cpp
-C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(57,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(84,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(142,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(143,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(175,77): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(66,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(106,37): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(117,38): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(186,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(187,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(191,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(192,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(206,39): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(207,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(211,40): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(212,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\PongGame.cpp(277,77): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   PongGame.vcxproj -> C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\PongGame\x64\Debug\PongGame.exe
