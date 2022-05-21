@@ -1,4 +1,5 @@
 #include <iostream>
+#include <sstream>
 #include <raylib.h>
 
 struct Ball
@@ -20,7 +21,7 @@ struct Paddle
     float speed;
     float width, height;
 
-    // creates rectangle dimensions/position used for drawing and collisions
+    // creates rectangle struct with dimensions/position used for drawing and collisions
     Rectangle GetRect()
     {
         return Rectangle{ x - width / 2, y - height / 2, 10, 100 };
@@ -37,7 +38,7 @@ int main()
     InitWindow(800, 600, "PONG!"); // Opens window for game
     SetWindowState(FLAG_VSYNC_HINT); // stabilize frame rate
 
-    // creates instances of the required objects
+    // creates instances of the required objects and sets values
     Ball ball;
     ball.x = GetScreenWidth() / 2.0f;
     ball.y = GetScreenHeight() / 2.0f;
@@ -59,9 +60,13 @@ int main()
     rightPaddle.height = 100;
     rightPaddle.speed = 500;
 
-    // initialise winner text to null
+    // initialise text to display on screen
     const char* winnerText = nullptr;
-
+    const char* leftScore = "0";
+    const char* rightScore = "0";
+    int num1 = 0;
+    int num2 = 0;
+    
     while (!WindowShouldClose()) // Keeps initilised window open
     {
         // give the ball speed
@@ -80,22 +85,22 @@ int main()
             ball.speedY *= -1;
         }
 
-        // control left paddle
-        if (IsKeyDown(KEY_W))
+        // control left paddle and bound its movement
+        if (IsKeyDown(KEY_W) && leftPaddle.y >= 50)
         {
             leftPaddle.y -= leftPaddle.speed * GetFrameTime();
         }
-        if (IsKeyDown(KEY_S))
+        if (IsKeyDown(KEY_S) && leftPaddle.y <= 550)
         {
             leftPaddle.y += leftPaddle.speed * GetFrameTime();
         }
 
-        // control right paddle
-        if (IsKeyDown(KEY_UP))
+        // control right paddle and boud its movement
+        if (IsKeyDown(KEY_UP) && rightPaddle.y >= 50)
         {
             rightPaddle.y -= rightPaddle.speed * GetFrameTime();
         }
-        if (IsKeyDown(KEY_DOWN))
+        if (IsKeyDown(KEY_DOWN) && rightPaddle.y <= 550)
         {
             rightPaddle.y += rightPaddle.speed * GetFrameTime();
         }
@@ -127,8 +132,9 @@ int main()
         }
         if (ball.x > GetScreenWidth())
         {
-            winnerText = "LEFT PLAYER WINS!";
-        }
+            winnerText = "LEFT PLAYER WINS!";       
+        }  
+        
 
         // reset game when space is pressed
         if (winnerText && IsKeyPressed(KEY_SPACE))
@@ -137,8 +143,24 @@ int main()
             ball.y = GetScreenHeight() / 2;
             ball.speedX = 300;
             ball.speedY = 300;
+
+            // adds score depending on who won the point
+            if (winnerText == "LEFT PLAYER WINS!")
+            {
+                num1++;
+            }
+            if (winnerText == "RIGHT PLAYER WINS!")
+            {
+                num2++;
+            }
             winnerText = nullptr;
         }
+
+        // converts score back to const char
+        std::string tmp = std::to_string(num1);
+        leftScore = tmp.c_str();
+        std::string tmp2 = std::to_string(num2);
+        rightScore = tmp2.c_str();
 
         // Drawing to screen
         BeginDrawing();
@@ -148,8 +170,15 @@ int main()
             leftPaddle.Draw();
             rightPaddle.Draw();
 
+            // Draw scoreboard
+            int rightScoreWidth = MeasureText(rightScore, 30);
+            int leftScoreWidth = MeasureText(leftScore, 30);           
+            DrawText(leftScore, (GetScreenWidth() / 2 - leftScoreWidth / 2) - 32.5f, 50, 40, RED);
+            DrawLine(GetScreenWidth() / 2, 30, GetScreenWidth() / 2, 110, BLACK);
+            DrawText(rightScore, (GetScreenWidth() / 2 - rightScoreWidth / 2) + 25, 50, 40, RED);
+
             if (winnerText) // if not nullptr
-            {
+            {               
                 int textWidth = MeasureText(winnerText, 60); // gets text width for text alignment
                 DrawText(winnerText, GetScreenWidth() / 2 - textWidth / 2, GetScreenHeight() / 2 - 30, 60, RED); // Draws winner text
             }
@@ -160,9 +189,5 @@ int main()
 
     CloseWindow();
 
-    // add score
-    // add bounds for paddles
-    // add controls and header maybe
-    // make ball curve when it hits paddle maybe
     return 0;
 }
