@@ -1,9 +1,0 @@
-Controls
-WASD to move
-Spacebar to jump
-Left click to attack
-Shift to run
-
-You will be testing the first level of the game. Please tell us about any bugs that you find and give us feedback about what parts of the game you like or dislike, especially when it comes to the player and how they control.
-
-There is a bug where you can fall through the floor if you walk into the corners of the stage, we are already working on fixing that issue so please try and ignore the corners for the time being.
