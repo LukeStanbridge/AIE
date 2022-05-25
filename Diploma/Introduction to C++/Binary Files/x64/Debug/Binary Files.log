@@ -1,0 +1,3 @@
+﻿  Binary Files.cpp
+C:\Users\s213090\Documents\AIE\Diploma\Introduction to C++\Binary Files\Binary Files.cpp(96,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Binary Files.vcxproj -> C:\Users\s213090\Documents\AIE\Diploma\Introduction to C++\Binary Files\x64\Debug\Binary Files.exe
