@@ -1,2 +1,0 @@
-﻿LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  ClassicGame.vcxproj -> C:\Users\bridg\Desktop\Git Uploads\AIE\Diploma\Introduction to C++\Assessment\ClassicGame\x64\Debug\ClassicGame.exe
