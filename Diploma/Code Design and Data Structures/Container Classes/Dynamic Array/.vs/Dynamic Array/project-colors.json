@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1c0b7d95-0821-4327-99e5-47f637e06c42": {
+      "ProjectGuid": "1c0b7d95-0821-4327-99e5-47f637e06c42",
+      "DisplayName": "LinkedLists",
+      "ColorIndex": 0
+    },
+    "ef080aa3-57cd-4cb5-88ae-298697f7aaf2": {
+      "ProjectGuid": "ef080aa3-57cd-4cb5-88ae-298697f7aaf2",
+      "DisplayName": "Dynamic Array",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

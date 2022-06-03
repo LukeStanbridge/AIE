@@ -10,111 +10,81 @@ public:
     Node* prev; // Pointer to previous node in DLL
 };
 
-// Add a node at the front
+// Add new value to the front of the list
 void pushFront(Node** head_ref, int new_data)
 {
-    // Allocate node
-    Node* new_node = new Node();
-
-    // Put in the data
-    new_node->data = new_data;
-
-    // Make next of new node as head and previous as NULL
-    new_node->next = (*head_ref);
+    Node* new_node = new Node(); // Allocate node
+    new_node->data = new_data; // Put in the data
+    new_node->next = (*head_ref); // Make next of new node as head and previous as NULL
     new_node->prev = NULL;
 
-    // Change prev of head node to new node
-    if ((*head_ref) != NULL)
+    if ((*head_ref) != NULL) // Change prev of head node to new node
     {
         (*head_ref)->prev = new_node;
     }
 
-    // Move the head to point to the new node
-    (*head_ref) = new_node;
+    (*head_ref) = new_node; // Move the head to point to the new node
 }
 
-// Add node to the back
+// Add new value to the end of the list
 void pushBack(Node** head_ref, int new_data)
 {
-    /* 1. allocate node */
-    Node* new_node = new Node();
-
+    Node* new_node = new Node(); /* 1. allocate node */
     Node* last = *head_ref; /* used in step 5*/
-
-    /* 2. put in the data */
-    new_node->data = new_data;
-
-    /* 3. This new node is going to be the last node, so
-        make next of it as NULL*/
-    new_node->next = NULL;
-
-    /* 4. If the Linked List is empty, then make the new
-        node as head */
-    if (*head_ref == NULL)
+    new_node->data = new_data; /* 2. put in the data */
+    new_node->next = NULL; /* 3. This new node is going to be the last node, so make next of it as NULL*/
+    
+    if (*head_ref == NULL) /* 4. If the Linked List is empty, then make the node as head */
     {
         new_node->prev = NULL;
         *head_ref = new_node;
         return;
     }
-
-    /* 5. Else traverse till the last node */
-    while (last->next != NULL)
+ 
+    while (last->next != NULL) /* 5. Else traverse till the last node */
     {
         last = last->next;
     }     
 
-    /* 6. Change the next of last node */
-    last->next = new_node;
-
-    /* 7. Make last node as previous of new node */
-    new_node->prev = last;
-
+    last->next = new_node; /* 6. Change the next of last node */
+    new_node->prev = last; /* 7. Make last node as previous of new node */
     return;
 }
 
-// Insert a node
+// Add a new value one-past the specified iterator location
 void insert(Node* prevNode, int newData)
 {
-    // check if given prevNode is NULL
-    if (prevNode == NULL)
+    if (prevNode == NULL) // check if given prevNode is NULL
     {
         cout << "the given previous node cannot be NULL";
         return;
     }
 
-    // allocate new node
-    Node* newNode = new Node();
+    Node* newNode = new Node(); // allocate new node
+    newNode->data = newData; // put in the 
+    newNode->next = prevNode->next; // make next of new node as next of 
+    prevNode->next = newNode; // make the next of prevNode as 
+    newNode->prev = prevNode; // make prevNode as previous of newNode
 
-    // put in the data
-    newNode->data = newData;
-
-    // make next of new node as next of prevNode
-    newNode->next = prevNode->next;
-
-    // make the next of prevNode as newNode
-    prevNode->next = newNode;
-
-    // make prevNode as previous of newNode
-    newNode->prev = prevNode;
-
-    // change previous of newNode's next node
-    if (newNode->next != NULL)
+    if (newNode->next != NULL) // change previous of newNode's next node
     {
         newNode->next->prev = newNode;
     }
 }
 
+// Return an iterator to the first element
 void begin(Node* firstNode)
-{
-    // check if given prevNode is NULL
-    if (firstNode == NULL)
+{  
+    if (firstNode == NULL) // check if given prevNode is NULL
     {
         cout << "the first node cannot be NULL";
         return;
     }
+
     Node* first;
     firstNode->prev = NULL;
     cout << "The first element is: ";
+
     while (firstNode->prev == NULL)
     {
         cout << firstNode->data << "\n";
@@ -124,6 +94,7 @@ void begin(Node* firstNode)
     }
 }
 
+// Return an iterator to a null element
 void end(Node* nullNode)
 {
     // check if given prevNode is NULL
@@ -132,8 +103,10 @@ void end(Node* nullNode)
         cout << "the first node cannot be NULL";
         return;
     }
+
     Node* last;
     cout << "";
+
     while (nullNode != NULL)
     {
         last = nullNode;
@@ -145,41 +118,55 @@ void end(Node* nullNode)
     }
 }
 
+// Return the first element by value, assert if no elements
 void first()
 {
 
 }
 
+// Return the last element by value, assert if no elements
 void last()
 {
 
 }
 
+// Return how many elements exist in the list
 void count(Node* node)
 {
-    Node* last;
     int count = 0;
     
     while (node != NULL)
     {
-        last = node;
         node = node->next;
         count++;
     }
+
     cout << "The number of elements in the list are: " << count << endl;
 }
 
+// Remove an element by its iterator
 void erase(Node* deleteNode)
 {
 
 }
 
-void remove(int sameValue)
+// Remove all elements with matching value
+void remove(Node** head, int key)
 {
-
+    Node* temp;
+    while ((*head) != NULL)
+    {
+        if ((*head)->data == key)
+        {
+            temp = *head;    //backup the head to free its memory
+            
+            free(temp);
+        }
+        (*head) = (*head)->next;
+    }
 }
 
-// remove the last element
+// Remove the last element
 void popBack(Node** head_ref, Node* del)
 {
     if (*head_ref == NULL || del == NULL)
@@ -201,27 +188,26 @@ void popBack(Node** head_ref, Node* del)
     return;
 }
 
-// remove the first element
+// Remove the first element
 void popFront(Node** head_ref, Node* del)
 {
-    /* base case */
-    if (*head_ref == NULL || del == NULL)
+    if (*head_ref == NULL || del == NULL) /* base case */
         return;
-
-    /* If node to be deleted is head node */
-    if (*head_ref == del)
+  
+    if (*head_ref == del) /* If node to be deleted is head node */
         *head_ref = del->next;
-
-    /* Finally, free the memory occupied by del*/
-    free(del);
+    
+    free(del); /* Finally, free the memory occupied by del*/
     return;
 }
 
+// Return a Boolean, true if the list is empty, false otherwise
 void empty()
 {
 
 }
 
+// Remove all elements from the list
 void clear()
 {
 
@@ -236,13 +222,6 @@ void printList(Node* node)
         last = node;
         node = node->next;
     }
-
-    /*cout << "\nTraversal in reverse direction \n";
-    while (&last != NULL)
-    {
-        cout << " " << last->data << " ";
-        last = last->prev;
-    }*/
 }
 
 int main()
@@ -261,7 +240,7 @@ int main()
     // linked list becomes 1->7->6->NULL
     pushFront(&head, 1);
 
-    // Insert 4 at the end. So linked
+    // Insert 4 at the tail. So linked
     // list becomes 1->7->6->4->NULL
     pushBack(&head, 4);
 
@@ -287,6 +266,26 @@ int main()
     begin(head);
     end(head);
     count(head);
+
+    pushFront(&head, 3);
+    pushFront(&head, 4);
+    pushFront(&head, 5);
+
+    cout << "New DLL is: ";
+    printList(head);
+    cout << endl;
+
+    remove(&head, 5);
+
+    cout << "Removed DLL is: ";
+    printList(head);
+    cout << endl;
+
+    remove(&head, 8);
+
+    cout << "Removed DLL is: ";
+    printList(head);
+    cout << endl;
 
     return 0;
 }
