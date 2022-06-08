@@ -10,7 +10,8 @@ public:
     Node* prev; // Pointer to previous node in DLL
 };
 
-// Add new value to the front of the list
+#pragma region Inserting and deleting a node at the front of the list
+// Insert a node at the front of the list
 void pushFront(Node** head_ref, int new_data)
 {
     Node* new_node = new Node(); // Allocate node
@@ -18,7 +19,7 @@ void pushFront(Node** head_ref, int new_data)
     new_node->next = (*head_ref); // Make next of new node as head and previous as NULL
     new_node->prev = NULL;
 
-    if ((*head_ref) != NULL) // Change prev of head node to new node
+    if (*head_ref != NULL) // Change prev of head node to new node
     {
         (*head_ref)->prev = new_node;
     }
@@ -26,8 +27,22 @@ void pushFront(Node** head_ref, int new_data)
     (*head_ref) = new_node; // Move the head to point to the new node
 }
 
-// Add new value to the end of the list
-void pushBack(Node** head_ref, int new_data)
+// Delete a node at the front of the list
+void popFront(Node** head_ref, Node* del)
+{
+    if (*head_ref == NULL || del == NULL) //base case
+        return;
+
+    if (*head_ref == del) // If node to be deleted is head node
+        *head_ref = del->next;
+
+    free(del); // free the memory occupied by del
+    return;
+}
+#pragma endregion
+
+#pragma region Inserting and deleting a node at the end of the list
+void pushBack(Node** head_ref, int new_data) // Insert a node at the end of the list
 {
     Node* new_node = new Node(); /* 1. allocate node */
     Node* last = *head_ref; /* used in step 5*/
@@ -51,123 +66,7 @@ void pushBack(Node** head_ref, int new_data)
     return;
 }
 
-// Add a new value one-past the specified iterator location
-void insert(Node* prevNode, int newData)
-{
-    if (prevNode == NULL) // check if given prevNode is NULL
-    {
-        cout << "the given previous node cannot be NULL";
-        return;
-    }
-
-    Node* newNode = new Node(); // allocate new node
-    newNode->data = newData; // put in the 
-    newNode->next = prevNode->next; // make next of new node as next of 
-    prevNode->next = newNode; // make the next of prevNode as 
-    newNode->prev = prevNode; // make prevNode as previous of newNode
-
-    if (newNode->next != NULL) // change previous of newNode's next node
-    {
-        newNode->next->prev = newNode;
-    }
-}
-
-// Return an iterator to the first element
-void begin(Node* firstNode)
-{  
-    if (firstNode == NULL) // check if given prevNode is NULL
-    {
-        cout << "the first node cannot be NULL";
-        return;
-    }
-
-    Node* first;
-    firstNode->prev = NULL;
-    cout << "The first element is: ";
-
-    while (firstNode->prev == NULL)
-    {
-        cout << firstNode->data << "\n";
-        first = firstNode;
-        firstNode->prev = firstNode;
-        firstNode = firstNode->next;
-    }
-}
-
-// Return an iterator to a null element
-void end(Node* nullNode)
-{
-    // check if given prevNode is NULL
-    if (nullNode == NULL)
-    {
-        cout << "the first node cannot be NULL";
-        return;
-    }
-
-    Node* last;
-    cout << "";
-
-    while (nullNode != NULL)
-    {
-        last = nullNode;
-        if (nullNode->next == NULL)
-        {
-            cout << "This node is null\n";
-        }
-        nullNode = nullNode->next;
-    }
-}
-
-// Return the first element by value, assert if no elements
-void first()
-{
-
-}
-
-// Return the last element by value, assert if no elements
-void last()
-{
-
-}
-
-// Return how many elements exist in the list
-void count(Node* node)
-{
-    int count = 0;
-    
-    while (node != NULL)
-    {
-        node = node->next;
-        count++;
-    }
-
-    cout << "The number of elements in the list are: " << count << endl;
-}
-
-// Remove an element by its iterator
-void erase(Node* deleteNode)
-{
-
-}
-
-// Remove all elements with matching value
-void remove(Node** head, int key)
-{
-    Node* temp;
-    while ((*head) != NULL)
-    {
-        if ((*head)->data == key)
-        {
-            temp = *head;    //backup the head to free its memory
-            
-            free(temp);
-        }
-        (*head) = (*head)->next;
-    }
-}
-
-// Remove the last element
-void popBack(Node** head_ref, Node* del)
+void popBack(Node** head_ref, Node* del) // Delete a node at the end of the list.
 {
     if (*head_ref == NULL || del == NULL)
         return;
@@ -187,85 +86,394 @@ void popBack(Node** head_ref, Node* del)
     free(del);
     return;
 }
+#pragma endregion
 
-// Remove the first element
-void popFront(Node** head_ref, Node* del)
+#pragma region Returning a count of how many nodes are in the list
+int countList(class Node* head)
 {
-    if (*head_ref == NULL || del == NULL) /* base case */
+    // Declare temp pointer to
+    // traverse the list
+    class Node* temp = head;
+
+    // Variable to store the count
+    int count = 0;
+
+    // Iterate the list and increment the count
+    while (temp->next != head && temp->next != NULL) {
+        temp = temp->next;
+        count++;
+    }
+
+    // As the list is circular, increment the
+    // counter at last
+    count++;
+
+    return count;
+}
+#pragma endregion
+
+#pragma region Inserting and deleting a node at an arbitrary location in the list
+bool insertAtLocation(class Node** head_ref, int data, int loc)
+{
+
+    class Node* temp = new Node(); // Declare two nodes
+    class Node* newNode = new Node();
+    int counter;
+
+    temp = *head_ref; // Point temp to head_ref
+
+    // count of total elements in the list
+    counter = countList(*head_ref);
+
+    // If list is empty or the position is
+    // not valid, return false
+    if (temp == NULL || counter < loc)
+        return false;
+
+    else {
+        // Assign the data
+        newNode->data = data;
+
+        // Iterate till the loc
+        for (int i = 1; i < loc - 1; i++) {
+            temp = temp->next;
+        }
+
+        newNode->next = temp->next; // insert new node
+        (temp->next)->prev = newNode;
+        temp->next = newNode;
+        newNode->prev = temp;
+
+        return true;
+    }
+
+    return false;
+}
+
+void deleteNode(class Node** head_ref, class Node* del)
+{
+    /* base case */
+    if (*head_ref == NULL || del == NULL)
         return;
-  
-    if (*head_ref == del) /* If node to be deleted is head node */
+
+    /* If node to be deleted is head node */
+    if (*head_ref == del)
         *head_ref = del->next;
-    
-    free(del); /* Finally, free the memory occupied by del*/
-    return;
+
+    /* Change next only if node to be deleted is NOT
+       the last node */
+    if (del->next != NULL)
+        del->next->prev = del->prev;
+
+    /* Change prev only if node to be deleted is NOT
+       the first node */
+    if (del->prev != NULL)
+        del->prev->next = del->next;
+
+    /* Finally, free the memory occupied by del*/
+    free(del);
 }
 
-// Return a Boolean, true if the list is empty, false otherwise
-void empty()
+// Remove an element by its iterator
+void erase(class Node** head_ref, int position)
 {
+    if (*head_ref == NULL || position <= 0) // if list in NULL or invalid position is given
+        return;
 
+    class Node* current = *head_ref;
+
+    for (int i = 1; current != NULL && i < position; i++) // traverse up to the node at position 'n' from the beginning
+        current = current->next;
+
+    if (current == NULL) // if 'n' is greater than the number of nodes in the doubly linked list
+        return;
+
+    deleteNode(head_ref, current); // delete the node pointed to by 'current'
 }
 
+// Remove all elements with matching value
+void remove(class Node** head_ref, int key)
+{
+    if (*head_ref == NULL) // if list in NULL or invalid position is given
+        return;
+
+    class Node* current = *head_ref;
+    class Node* newNode = new Node(); // allocate new node
+    newNode->data = key;
+
+    while (current != NULL)
+    {
+        if (current->data == newNode->data)
+        {
+            break;
+        }
+        current = current->next;
+    }
+
+    if (current == NULL) // if the value you want to delete is not in the doubly linked list
+        return;
+
+    deleteNode(head_ref, current); // delete the node pointed to by 'current'
+}
+#pragma endregion
+
+#pragma region Checking if the list is empty
+void empty(Node** head_ref)
+{
+    if (*head_ref == NULL)
+    {
+        cout << "This list is empty" << endl;
+    }
+    else
+    {
+        cout << "The list is not empty" << endl;
+    }
+}
+#pragma endregion
+
+#pragma region Returning the first or last node in the list
+// Return the first element
+void begin(Node* firstNode)
+{  
+    if (firstNode == NULL) // check if given prevNode is NULL
+    {
+        cout << "the first node is NULL" << endl;
+        return;
+    }
+
+    cout << "The first element is: " << firstNode->data << endl;
+}
+
+// Return an iterator to a null element
+void end(Node* lastNode)
+{
+    Node* last = new Node();
+    // check if given prevNode is NULL
+    if (lastNode == NULL)
+    {
+        cout << "the last node cannot be NULL";
+        return;
+    }
+
+    do
+    {
+        lastNode = lastNode->next;
+        last->data = lastNode->data;
+    } while (lastNode->next != NULL);
+
+    cout << "The last element is: " << last->data << endl;
+}
+#pragma endregion
+
+#pragma region Sorting the list (as appropriate)
+void sortedInsert(class Node** head_ref, class Node* newNode)
+{
+    class Node* current;
+
+    // if list is empty
+    if (*head_ref == NULL)
+        *head_ref = newNode;
+
+    // if the node is to be inserted at the beginning
+    // of the doubly linked list
+    else if ((*head_ref)->data >= newNode->data) {
+        newNode->next = *head_ref;
+        newNode->next->prev = newNode;
+        *head_ref = newNode;
+    }
+
+    else {
+        current = *head_ref;
+
+        // locate the node after which the new node
+        // is to be inserted
+        while (current->next != NULL &&
+            current->next->data < newNode->data)
+            current = current->next;
+
+        /*Make the appropriate links */
+
+        newNode->next = current->next;
+
+        // if the new node is not inserted
+        // at the end of the list
+        if (current->next != NULL)
+            newNode->next->prev = newNode;
+
+        current->next = newNode;
+        newNode->prev = current;
+    }
+}
+
+void insertionSort(class Node** head_ref)
+{
+    // Initialize 'sorted' - a sorted doubly linked list
+    class Node* sorted = NULL;
+
+    // Traverse the given doubly linked list and
+    // insert every node to 'sorted'
+    class Node* current = *head_ref;
+    while (current != NULL) {
+
+        // Store next for next iteration
+        class Node* next = current->next;
+
+        // removing all the links so as to create 'current'
+        // as a new node for insertion
+        current->prev = current->next = NULL;
+
+        // insert current in 'sorted' doubly linked list
+        sortedInsert(&sorted, current);
+
+        // Update current
+        current = next;
+    }
+
+    // Update head_ref to point to sorted doubly linked list
+    *head_ref = sorted;
+}
+#pragma endregion
+
+#pragma region Clearing and printing the list
 // Remove all elements from the list
-void clear()
-{
-
+void clear(class Node** head_ref)
+{  
+    while (*head_ref != NULL)
+    {
+        class Node* current = *head_ref;
+        *head_ref = current->next;
+        deleteNode(head_ref, current);       
+    }
 }
 
 void printList(Node* node)
 {
     Node* last;
+    cout << "|";
     while (node != NULL)
     {
         cout << " " << node->data << " ";
         last = node;
         node = node->next;
     }
+    cout << "|" << endl;
 }
+#pragma endregion
+
 
 int main()
 {
-    /* Start with the empty list */
     Node* head = NULL;
+    int choice;
 
-    // Insert 6. So linked list becomes 6->NULL
-    pushBack(&head, 6);
+    do
+    {
+        cout << endl
+            << " 1 - Insert a node at the front of the list.\n"
+            << " 2 - Delete a node at the front of the list.\n"
+            << " 3 - Insert a node at the end of the list.\n"
+            << " 4 - Delete a node at the end of the list.\n"
+            << " 5 - Insert a node at an arbitrary location in the list.\n"
+            << " 6 - Delete a node at an arbitrary location in the list.\n"
+            << " 7 - Delete a node with a specific value in the list.\n"
+            << " 8 - Return a count of how many nodes are in the list.\n"
+            << " 9 - Check if the list is empty.\n"
+            << " 10 - Return the first node in the list.\n"
+            << " 11 - Return the last node in the list.\n"
+            << " 12 - Sort the list.\n"
+            << " 13 - Clear the contents of the list.\n"
+            << " 14 - Print the list.\n"
+            << " 15 - Exit Program.\n\n"
+            << " Enter your choice and press return: ";
+        cin >> choice;
+        cout << endl;
 
-    // Insert 7 at the beginning. So
-    // linked list becomes 7->6->NULL
+        switch (choice)
+        {
+        case 1:
+            int insertFront;
+            cout << "Enter a value to put at the front of the list and press return: ";
+            cin >> insertFront;
+            pushFront(&head, insertFront);
+            break;
+
+        case 2:
+            cout << "Deleted the node at the front of the list.\n";
+            popFront(&head, head);
+            break;
+
+        case 3:
+            //code
+            break;
+        case 4:
+            //code
+            break;
+        case 5:
+            //code
+            break;
+        case 6:
+            //code
+            break;
+        case 7:
+            //code
+            break;
+        case 8:
+            //code
+            break;
+        case 9:
+            //code
+            break;
+        case 10:
+            //code
+            break;
+        case 11:
+            //code
+            break;
+        case 12:
+            //code
+            break;
+        case 13:
+            //code
+            break;
+
+        case 14:
+            cout << "Contents of list >> ";
+            printList(head);
+            break;
+
+        case 15:
+            cout << "End of Program.\n";
+            break;
+
+        default:
+            cout << "Not a Valid Choice. \n"
+                 << "Choose again.\n";
+            break;
+        }
+
+    } while (choice != 15);
+    return 0;
+      
+    /*pushBack(&head, 6);
     pushFront(&head, 7);
-
-    // Insert 1 at the beginning. So
-    // linked list becomes 1->7->6->NULL
     pushFront(&head, 1);
-
-    // Insert 4 at the tail. So linked
-    // list becomes 1->7->6->4->NULL
     pushBack(&head, 4);
 
-    // Insert 8, after 7. So linked
-    // list becomes 1->7->8->6->4->NULL
-    insert(head->next, 8);
-
-    cout << "Created DLL is: ";
+    cout << "Created DLL is:";
     printList(head);
-    cout << endl;
 
-    popFront(&head, head);/*delete first node*/
+    popFront(&head, head);
 
-    cout << "popFront DLL is: ";
+    cout << "popFront DLL is:";
     printList(head);
-    cout << endl;
 
     popBack(&head, head);
-    cout << "popBack DLL is: ";
+    cout << "popBack DLL is:";
     printList(head);
-    cout << endl;
 
     begin(head);
     end(head);
-    count(head);
+    cout << "The number of nodes in the list is: " << countList(head) << endl;
 
     pushFront(&head, 3);
     pushFront(&head, 4);
@@ -273,19 +481,50 @@ int main()
 
     cout << "New DLL is: ";
     printList(head);
-    cout << endl;
 
-    remove(&head, 5);
+    insertAtLocation(&head, 24, 3);
+
+    cout << "Inserted DLL is: ";
+    printList(head);
+
+    erase(&head, 5);
 
     cout << "Removed DLL is: ";
     printList(head);
-    cout << endl;
 
     remove(&head, 8);
 
-    cout << "Removed DLL is: ";
+    cout << "Deleted DLL is: ";
     printList(head);
-    cout << endl;
 
-    return 0;
+    remove(&head, 4);
+
+    cout << "Deleted DLL is: ";
+    printList(head);
+
+    cout << "The number of nodes in the list is: " << countList(head) << endl;
+
+    pushBack(&head, 45);
+    pushBack(&head, 32);
+    printList(head);
+
+    erase(&head, 1);
+    printList(head);
+
+    begin(head);
+
+    
+    end(head);
+
+    pushFront(&head, 69);
+    begin(head);
+
+    insertionSort(&head);
+    cout << "Doubly Linked List After Sorting:";
+    printList(head);
+
+    clear(&head);
+    empty(&head);
+
+    return 0;*/
 }
