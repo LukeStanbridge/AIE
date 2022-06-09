@@ -11,10 +11,8 @@ private:
     };
     Node* head;
 
-
 public:
     LinkedList();
-
 
     void pushFront(int new_data);
     void popFront();
@@ -28,8 +26,7 @@ public:
     void empty();
     void begin();
     void end();
-    void sortedInsert(Node* newNode);
-    void insertionSort();
+    void bubbleSort();
     void clear();
     void printList();
 };

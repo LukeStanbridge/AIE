@@ -1,8 +1,7 @@
 #include "LinkedLists.h"
-#include <stdlib.h>
 #include <iostream>
-
 using namespace std;
+
 int main()
 {
     int choice;
@@ -166,8 +165,9 @@ int main()
 
     List.pushFront(69);
     List.begin();
+    List.printList();
 
-    List.insertionSort();
+    List.bubbleSort();
     cout << "Doubly Linked List After Sorting:";
     List.printList();
 

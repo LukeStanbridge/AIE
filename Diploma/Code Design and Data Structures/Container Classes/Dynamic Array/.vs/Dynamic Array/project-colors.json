@@ -10,7 +10,12 @@
       "ProjectGuid": "ef080aa3-57cd-4cb5-88ae-298697f7aaf2",
       "DisplayName": "Dynamic Array",
       "ColorIndex": 1
+    },
+    "3f8f9da8-5f19-4322-8518-73f1cfcfc2b8": {
+      "ProjectGuid": "3f8f9da8-5f19-4322-8518-73f1cfcfc2b8",
+      "DisplayName": "BinaryTree",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

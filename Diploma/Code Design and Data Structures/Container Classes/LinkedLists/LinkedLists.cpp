@@ -14,15 +14,15 @@ void LinkedList::pushFront(int new_data)
 {
     Node* new_node = new Node(); // Allocate node
     new_node->data = new_data; // Put in the data
-    new_node->next = (head); // Make next of new node as head and previous as NULL
+    new_node->next = head; // Make next of new node as head and previous as NULL
     new_node->prev = NULL;
 
     if (head != NULL) // Change prev of head node to new node
     {
-        (head)->prev = new_node;
+        head->prev = new_node;
     }
 
-    (head) = new_node; // Move the head to point to the new node
+    head = new_node; // Move the head to point to the new node
 }
 
 // Delete a node at the front of the list
@@ -245,6 +245,7 @@ void LinkedList::begin()
 void LinkedList::end()
 {
     Node* last = new Node();
+    
     // check if given prevNode is NULL
     if (head == NULL)
     {
@@ -252,82 +253,44 @@ void LinkedList::end()
         return;
     }
 
-    do
+    last = head;
+
+    while (last->next != NULL)
     {
-        head = head->next;
-        last->data = head->data;
-    } while (head->next != NULL);
+        last = last->next;
+    }
 
     cout << "The last element is: " << last->data << endl;
 }
 #pragma endregion
 
 #pragma region Sorting the list (as appropriate)
-void LinkedList::sortedInsert(class Node* newNode)
+void LinkedList::bubbleSort()
 {
-    class Node* current;
+    int swapped, i;
+    Node* ptr1 = new Node();
+    Node* lptr = NULL;
 
-    // if list is empty
+    /* Checking for empty list */
     if (head == NULL)
-        head = newNode;
+        return;
 
-    // if the node is to be inserted at the beginning
-    // of the doubly linked list
-    else if (head->data >= newNode->data) {
-        newNode->next = head;
-        newNode->next->prev = newNode;
-        head = newNode;
-    }
+    do
+    {
+        swapped = 0;
+        ptr1 = head;
 
-    else {
-        current = head;
-
-        // locate the node after which the new node
-        // is to be inserted
-        while (current->next != NULL &&
-            current->next->data < newNode->data)
-            current = current->next;
-
-        /*Make the appropriate links */
-
-        newNode->next = current->next;
-
-        // if the new node is not inserted
-        // at the end of the list
-        if (current->next != NULL)
-            newNode->next->prev = newNode;
-
-        current->next = newNode;
-        newNode->prev = current;
-    }
-}
-
-void LinkedList::insertionSort()
-{
-    // Initialize 'sorted' - a sorted doubly linked list
-    class Node* sorted = NULL;
-
-    // Traverse the given doubly linked list and
-    // insert every node to 'sorted'
-    class Node* current = head;
-    while (current != NULL) {
-
-        // Store next for next iteration
-        class Node* next = current->next;
-
-        // removing all the links so as to create 'current'
-        // as a new node for insertion
-        current->prev = current->next = NULL;
-
-        // insert current in 'sorted' doubly linked list
-        sortedInsert(current);
-
-        // Update current
-        current = next;
-    }
-
-    // Update head_ref to point to sorted doubly linked list
-    head = sorted;
+        while (ptr1->next != lptr)
+        {
+            if (ptr1->data > ptr1->next->data)
+            {
+                swap(ptr1->data, ptr1->next->data);
+                swapped = 1;
+            }
+            ptr1 = ptr1->next;
+        }
+        lptr = ptr1;
+    } while (swapped);
 }
 #pragma endregion
 
