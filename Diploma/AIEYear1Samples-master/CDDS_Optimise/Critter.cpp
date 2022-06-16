@@ -1,4 +1,5 @@
 #include "Critter.h"
+#include "ResourceManager.h"
 
 
 Critter::Critter()
@@ -11,8 +12,8 @@ Critter::Critter()
 
 Critter::~Critter()
 {
-	//hmm... have to unload the texture
-	UnloadTexture(m_texture);
+	//have to unload the texture
+	/*UnloadTexture(m_texture);*/
 	m_isLoaded = false;
 }
 
@@ -22,15 +23,16 @@ void Critter::Init(Vector2 position, Vector2 velocity, float radius, const char*
 	m_velocity = velocity;
 	m_radius = radius;
 	
-	//hmmm... loading texture everytime
-	m_texture = LoadTexture(texture);	
+	//loading texture everytime
+	/*m_texture = LoadTexture(texture);*/
+	m_texture = ResourceManager::instance().loadTexture(texture);
 
 	m_isLoaded = true;
 }
 
 void Critter::Destroy()
 {
-	UnloadTexture(m_texture);
+	/*UnloadTexture(m_texture);*/
 	m_isLoaded = false;
 }
 
@@ -50,6 +52,8 @@ void Critter::Draw()
 {
 	if (m_isLoaded == false)
 		return;
+
+	/*m_texture = m_resources.loadTexture(texture);*/
 
 	DrawTexture(m_texture, m_position.x, m_position.y, WHITE);
 }

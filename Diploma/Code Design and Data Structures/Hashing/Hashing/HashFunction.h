@@ -1,16 +1,20 @@
 #pragma once
 #include <iostream>
-#include <functional>
+#include <list>
+#include <cstring>
+using namespace std;
 
-//namespace HashFunction {
-//
-//    typedef std::function< unsigned int(const char*, unsigned int)> HashFunc;
-//
-//    // implementation of a basic addition hash
-//    unsigned int badHash(const char* data, unsigned int length);
-//
-//    // ADD YOUR FUNCTIONS HERE
-//
-//    // a helper to access a default hash function
-//    /*static HashFunc default = badHash;*/
-//}
+class HashTable
+{
+private:
+	static const int buckets = 10;
+	list<pair<int, string>> table[buckets];
+
+public:
+	bool isEmpty() const; // check if table is empty
+	int hashFunction(int key); // hash function
+	void insert(int key, string value); // insert into hash table
+	void remove(int key); // remove from hash table
+	string search(int key); // search table 
+	void print(); // print out the hash table
+};

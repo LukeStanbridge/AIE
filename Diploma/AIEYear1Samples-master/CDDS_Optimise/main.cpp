@@ -145,7 +145,7 @@ int main(int argc, char* argv[])
                     continue;
                 // check every critter against every other critter
                 
-                // hmm... use of sqrtf() could eliminate
+                // use of sqrtf() could eliminate
                 float r2 = critters[i].GetRadius() + critters[j].GetRadius();
                 r2 = r2 * r2;
 

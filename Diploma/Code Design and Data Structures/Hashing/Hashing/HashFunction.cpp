@@ -1,101 +1,93 @@
-#include<iostream>
+#include <iostream>
 #include<list>
+#include<cstring>
+#include "HashFunction.h"
 using namespace std;
 
-class Hash
+bool HashTable::isEmpty() const
 {
-    int BUCKET;    // No. of buckets
+	int sum{};
+	for (int i{}; i < buckets; i++)
+	{
+		sum += table[i].size();
+	}
 
-    // Pointer to an array containing buckets
-    list<int>* table;
-public:
-    Hash(int V);  // Constructor
-
-    // inserts a key into hash table
-    void insertItem(int x);
-
-    // deletes a key from hash table
-    void deleteItem(int key);
-
-    // hash function to map values to key
-    int hashFunction(int x) {
-        return (x % BUCKET);
-    }
-
-    void displayHash();
-};
-
-Hash::Hash(int b)
-{
-    this->BUCKET = b;
-    table = new list<int>[BUCKET];
+	// checking if sum is zero
+	if (!sum)
+	{
+		return true;
+	}
+	return false;
 }
 
-void Hash::insertItem(int key)
+int HashTable::hashFunction(int key)
 {
-    int index = hashFunction(key);
-    table[index].push_back(key);
+	return key % buckets; // check modulus(remainder) for buckets
 }
 
-void Hash::deleteItem(int key)
+void HashTable::insert(int key, string value)
 {
-    // get the hash index of key
-    int index = hashFunction(key);
+	int hashValue = hashFunction(key); // need hashed value to correspond to the key
+	auto& cell = table[hashValue]; // create list that we will put in the key value to
+	auto bItr = begin(cell); // iterator to the beginning of this list
+	bool keyExists = false; // assuming key doesnt exist
 
-    // find the key in (index)th list
-    list <int> ::iterator i;
-    for (i = table[index].begin();
-        i != table[index].end(); i++) {
-        if (*i == key)
-            break;
-    }
+	// replace value with same key
+	for (; bItr != end(cell); bItr++)
+	{
+		if (bItr->first == key)
+		{
+			keyExists = true;
+			bItr->second = value;
+			cout << "[WARNING] Key exists. Value replaced." << endl;
+			break;
+		}
+	}
 
-    // if key is found in hash table, remove it
-    if (i != table[index].end())
-        table[index].erase(i);
+	if (!keyExists)
+	{
+		cell.emplace_back(key, value);
+	}
+	return;
 }
 
-// function to display hash table
-void Hash::displayHash() {
-    for (int i = 0; i < BUCKET; i++) {
-        cout << i;
-        for (auto x : table[i])
-            cout << " --> " << x;
-        cout << endl;
-    }
-}
-
-// Driver program
-int main()
+void HashTable::remove(int key)
 {
-    // array that contains keys to be mapped
-    int a[] = { 15, 11, 27, 8, 12 };
-    int n = sizeof(a) / sizeof(a[0]);
+	int hashValue = hashFunction(key); // need hashed value to correspond to the key
+	auto& cell = table[hashValue]; // create list that we will put in the key value to
+	auto bItr = begin(cell); // iterator to the beginning of this list
+	bool keyExists = false; // assuming key doesnt exist
 
-    // insert the keys into the hash table
-    Hash h(7);   // 7 is count of buckets in
-                 // hash table
-    for (int i = 0; i < n; i++)
-        h.insertItem(a[i]);
+	// iterates through list and removes pair if it's in table
+	for (; bItr != end(cell); bItr++)
+	{
+		if (bItr->first == key)
+		{
+			keyExists = true;
+			bItr = cell.erase(bItr);
+			cout << "[INFO] Pair removed." << endl;
+			break;
+		}
+	}
 
-    // delete 12 from hash table
-    h.deleteItem(12);
-
-    // display the Hash table
-    h.displayHash();
-
-    return 0;
+	if (!keyExists)
+	{
+		cout << "[WARNING] Key not found. Pair not removed." << endl;
+	}
+	return;
 }
 
-//namespace HashFunction {
-//
-//    // implementation of a basic addition hash
-//    unsigned int badHash(const char* data, unsigned int length) {
-//        unsigned int hash = 0;
-//
-//        for (unsigned int i = 0; i < length; ++i)
-//            hash += data[i];
-//
-//        return hash;
-//    }
-//}
+void HashTable::print()
+{
+	for (int i{}; i < buckets; i++)
+	{
+		if (table[i].size() == 0) continue; // stop looking
+
+		auto bItr = table[i].begin();
+		for (; bItr != table[i].end(); bItr++)
+		{
+			cout << "[INFO] Key: " << bItr->first << " Value: " << bItr->second << endl;
+		}
+	}
+	return;
+}
