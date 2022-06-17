@@ -20,7 +20,12 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "c2208d8b-8115-4911-a013-752ba8caa7ec": {
+      "ProjectGuid": "c2208d8b-8115-4911-a013-752ba8caa7ec",
+      "DisplayName": "DooblayLinkedListTesting",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

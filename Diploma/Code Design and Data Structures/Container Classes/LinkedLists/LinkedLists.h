@@ -29,6 +29,7 @@ public:
     void bubbleSort();
     void clear();
     void printList();
+    void draw(int screenPos);
 };
 
 

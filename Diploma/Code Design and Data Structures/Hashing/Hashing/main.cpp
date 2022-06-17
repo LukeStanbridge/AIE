@@ -1,44 +1,48 @@
 #include <iostream>
+#include "raylib.h"
 #include "HashFunction.h"
 
 int main()
 {
-	HashTable ht;
+	int screenWidth = 1600;
+	int screenHeight = 800;
 
-	if (ht.isEmpty())
+	InitWindow(screenWidth, screenHeight, "Hashbrowns");
+	SetTargetFPS(60);
+	Image image1 = LoadImage("hashbrown.png"); 
+	ImageResize(&image1, 100, 100);
+	Texture2D hashbrown = LoadTextureFromImage(image1);
+	Image image2 = LoadImage("weedbrownies.png");
+	ImageResize(&image2, 100, 100);
+	Texture2D hashbrownie = LoadTextureFromImage(image2);
+
+	while (!WindowShouldClose())
 	{
-		cout << "Correct answer. Good job." << endl;
-	}
-	else
-	{
-		cout << "There is an issue, call john" << endl;
-	}
+		// Update
+		//----------------------------------------------------------------------------------
+		HashTable hashy;
 
-	ht.insert(23, "MJ");
-	ht.insert(24, "KB");
-	ht.insert(21, "TD");
-	ht.insert(22, "RG");
-	ht.insert(12, "JM");
-	ht.insert(15, "VC");
-	ht.insert(21, "KG");
-	ht.insert(48, "LS");
+		hashy.insert("good", hashbrown);
+		hashy.insert("bad", hashbrownie);
 
-	ht.print();
+		//----------------------------------------------------------------------------------
 
-	ht.remove(22);
-	ht.remove(17);
-	ht.remove(24);
+		// Draw
+		//----------------------------------------------------------------------------------
+		BeginDrawing();
+			ClearBackground(RAYWHITE);
 
-	if (ht.isEmpty())
-	{
-		cout << "There is an issue, call john" << endl;
-	}
-	else
-	{
-		cout << "Correct answer. Good job." << endl;
+			DrawText("Hashy Textures", 670, 30, 20, RED);
+
+			hashy.draw();
+			hashy.print();
+
+			hashy.get("bad");
+
+			DrawFPS(10, 10);
+		EndDrawing();
 	}
 
-	ht.print();
-
+	CloseWindow();
 	return 0;
 }

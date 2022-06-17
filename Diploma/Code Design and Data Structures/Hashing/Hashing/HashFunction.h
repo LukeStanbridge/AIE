@@ -2,19 +2,28 @@
 #include <iostream>
 #include <list>
 #include <cstring>
+#include <unordered_map>
+#include "raylib.h"
 using namespace std;
 
 class HashTable
 {
 private:
-	static const int buckets = 10;
-	list<pair<int, string>> table[buckets];
+	static const int buckets = 20;
+	
+	struct typeOfHashy
+	{
+		string type;
+		Texture2D pngFile;
+		typeOfHashy* next;
+	};
+	typeOfHashy* HashyTable[buckets];
 
 public:
-	bool isEmpty() const; // check if table is empty
-	int hashFunction(int key); // hash function
-	void insert(int key, string value); // insert into hash table
-	void remove(int key); // remove from hash table
-	string search(int key); // search table 
-	void print(); // print out the hash table
+	HashTable();
+	int hashFunction(string key); // hash function
+	void insert(string type, Texture2D pngFile); // insert into hash table
+	void draw(); // draw function to show what entries are in the table
+	void print(); // print function to show what is in each individual bucket
+	void get(string type); // get 
 };

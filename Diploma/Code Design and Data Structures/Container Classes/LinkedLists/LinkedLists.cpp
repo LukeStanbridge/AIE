@@ -1,5 +1,7 @@
 #include <iostream>
 #include "LinkedLists.h"
+#include "raylib.h"
+#include "sstream"
 using namespace std;
 
 
@@ -321,4 +323,22 @@ void LinkedList::printList()
 }
 #pragma endregion
 
+void LinkedList::draw(int screenPos)
+{
+    Node* temp = head;
+    const char* output;
+    string convert;
+    int screenWidth = 50;
+    int screenHeight = screenPos;
 
+    while (temp != NULL)
+    {
+        convert = to_string(temp->data);
+        output = convert.c_str();
+        DrawText(output, screenWidth, screenPos, 15, BLACK);
+
+        screenWidth += 10;
+        temp = temp->next;
+    }
+    delete temp;
+}

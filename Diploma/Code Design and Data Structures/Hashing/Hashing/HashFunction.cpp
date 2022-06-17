@@ -1,93 +1,117 @@
 #include <iostream>
 #include<list>
 #include<cstring>
+#include <sstream>
 #include "HashFunction.h"
 using namespace std;
 
-bool HashTable::isEmpty() const
+HashTable::HashTable()
 {
-	int sum{};
-	for (int i{}; i < buckets; i++)
+	for (int i = 0; i < buckets; i++)
 	{
-		sum += table[i].size();
+		HashyTable[i] = new typeOfHashy;
+		HashyTable[i]->type = "empty";
+		HashyTable[i]->pngFile;
+		HashyTable[i]->next = NULL;
 	}
-
-	// checking if sum is zero
-	if (!sum)
-	{
-		return true;
-	}
-	return false;
 }
 
-int HashTable::hashFunction(int key)
+int HashTable::hashFunction(string key)
 {
-	return key % buckets; // check modulus(remainder) for buckets
+	int hash = 0;
+	int index;
+
+	
+	for (int i = 0; i < key.length(); i++)
+	{
+		hash = hash + (int)key[i];
+	}
+
+	index = hash % buckets; // index the key 
+	return index;
 }
 
-void HashTable::insert(int key, string value)
+void HashTable::insert(string type, Texture2D pngFile)
 {
-	int hashValue = hashFunction(key); // need hashed value to correspond to the key
-	auto& cell = table[hashValue]; // create list that we will put in the key value to
-	auto bItr = begin(cell); // iterator to the beginning of this list
-	bool keyExists = false; // assuming key doesnt exist
+	int hashValue = hashFunction(type); // need hashed value to correspond to the key
 
-	// replace value with same key
-	for (; bItr != end(cell); bItr++)
+	// insert data into hash table if spot is empty
+	if (HashyTable[hashValue]->type == "empty")
 	{
-		if (bItr->first == key)
+		HashyTable[hashValue]->type = type;
+		HashyTable[hashValue]->pngFile = pngFile;
+	}
+	// if spot in hash table is full then move to next available spot
+	else
+	{
+		typeOfHashy* Ptr = HashyTable[hashValue];
+		typeOfHashy* n = new typeOfHashy;
+		n->type = type;
+		n->pngFile = pngFile;
+		n->next = NULL;
+		while (Ptr->next != NULL)
 		{
-			keyExists = true;
-			bItr->second = value;
-			cout << "[WARNING] Key exists. Value replaced." << endl;
-			break;
+			Ptr = Ptr->next;
+		}
+		Ptr->next = n;
+	}
+}
+
+void HashTable::draw()
+{
+	const char* tmp;
+
+	int widthPos = 400;
+	int heightPos = 200;
+
+	for (int i = 0; i < buckets; i++)
+	{
+		// Draw everything stored in the hash table that isn't empty
+		if (HashyTable[i]->type != "empty")
+		{
+			tmp = HashyTable[i]->type.c_str(); // stores key as const char
+			DrawText(tmp, widthPos + 30, 170, 20, RED);
+			DrawTexture(HashyTable[i]->pngFile, widthPos, heightPos, WHITE);
+			widthPos += 200; // stagger output
 		}
 	}
-
-	if (!keyExists)
-	{
-		cell.emplace_back(key, value);
-	}
-	return;
-}
-
-void HashTable::remove(int key)
-{
-	int hashValue = hashFunction(key); // need hashed value to correspond to the key
-	auto& cell = table[hashValue]; // create list that we will put in the key value to
-	auto bItr = begin(cell); // iterator to the beginning of this list
-	bool keyExists = false; // assuming key doesnt exist
-
-	// iterates through list and removes pair if it's in table
-	for (; bItr != end(cell); bItr++)
-	{
-		if (bItr->first == key)
-		{
-			keyExists = true;
-			bItr = cell.erase(bItr);
-			cout << "[INFO] Pair removed." << endl;
-			break;
-		}
-	}
-
-	if (!keyExists)
-	{
-		cout << "[WARNING] Key not found. Pair not removed." << endl;
-	}
-	return;
 }
 
 void HashTable::print()
 {
-	for (int i{}; i < buckets; i++)
-	{
-		if (table[i].size() == 0) continue; // stop looking
+	const char* tmp;
+	int counter = 0; // counter for labeling
 
-		auto bItr = table[i].begin();
-		for (; bItr != table[i].end(); bItr++)
+	int widthPos = 150;
+	int heightPos = 100;
+
+	DrawText("[All buckets in hash table]", 70, 70, 20, RED);
+
+	// search through all buckets in hash table
+	for (int i = 0; i < buckets; i++)
+	{
+		// print list of the hash table
+		if (HashyTable[i] != NULL)
 		{
-			cout << "[INFO] Key: " << bItr->first << " Value: " << bItr->second << endl;
+			string number = to_string(counter); // convert count to string
+			tmp = HashyTable[i]->type.c_str(); // stores as const char
+			DrawText(number.c_str(), widthPos, heightPos, 20, RED);
+			DrawText(tmp, widthPos + 30, heightPos, 20, RED);
+			heightPos += 30; // stagger the text
+			counter++;
 		}
 	}
-	return;
 }
+
+void HashTable::get(string type) 
+{
+	const char* tmp;
+	int hashValue = hashFunction(type); // get hash value through key
+	tmp = HashyTable[hashValue]->type.c_str(); // convert string to const char for drawing text
+
+	// Draw output for raylib
+	DrawText("[Using the get function]", 340, 400, 20, RED);
+	DrawText(tmp, 435, 430, 20, RED);
+	DrawTexture(HashyTable[hashValue]->pngFile, 400, 460, WHITE);
+}
+
