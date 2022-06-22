@@ -108,19 +108,19 @@ int main()
         List.pushFront(2);
         List.pushFront(3);
         DrawText(option1, 50, 75, 15, RED);
-        List.draw(80);
+        /*List.draw(80);*/
 
         // delete front
         List.popFront();
         DrawText(option2, 50, 100, 15, RED);
-        List.draw(105);
+        /*List.draw(105);*/
         
         //Add back
         List.pushBack(4);
         List.pushBack(5);
         List.pushBack(6);
         DrawText(option3, 50, 125, 20, RED);
-        List.draw(130);
+        /*List.draw(130);*/
        
         //DrawText(option4, 50, 150, 20, RED);
 

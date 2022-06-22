@@ -24,12 +24,13 @@ public:
     void erase(int position);
     void remove(int key);
     void empty();
-    void begin();
-    void end();
+    int begin();
+    int end();
     void bubbleSort();
     void clear();
     void printList();
-    void draw(int screenPos);
+    int getAtPos(int position);
+    /*void draw(int screenPos);*/
 };
 
 

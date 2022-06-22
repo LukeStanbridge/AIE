@@ -25,7 +25,12 @@
       "ProjectGuid": "c2208d8b-8115-4911-a013-752ba8caa7ec",
       "DisplayName": "DooblayLinkedListTesting",
       "ColorIndex": 3
+    },
+    "ec06548c-fd75-42d4-97a7-611890a41764": {
+      "ProjectGuid": "ec06548c-fd75-42d4-97a7-611890a41764",
+      "DisplayName": "UnitTesting",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

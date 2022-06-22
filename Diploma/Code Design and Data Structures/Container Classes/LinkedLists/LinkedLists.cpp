@@ -1,6 +1,5 @@
 #include <iostream>
 #include "LinkedLists.h"
-#include "raylib.h"
 #include "sstream"
 using namespace std;
 
@@ -95,7 +94,7 @@ int LinkedList::countList()
 {
     // Declare temp pointer to
     // traverse the list
-    class Node* temp = head;
+    Node* temp = head;
 
     // Variable to store the count
     int count = 0;
@@ -232,19 +231,20 @@ void LinkedList::empty()
 
 #pragma region Returning the first or last node in the list
 // Return the first element
-void LinkedList::begin()
+int LinkedList::begin()
 {  
     if (head == NULL) // check if given prevNode is NULL
     {
         cout << "the first node is NULL" << endl;
-        return;
+        return NULL;
     }
 
     cout << "The first element is: " << head->data << endl;
+    return head->data;
 }
 
 // Return an iterator to a null element
-void LinkedList::end()
+int LinkedList::end()
 {
     Node* last = new Node();
     
@@ -252,7 +252,7 @@ void LinkedList::end()
     if (head == NULL)
     {
         cout << "the last node cannot be NULL";
-        return;
+        return NULL;
     }
 
     last = head;
@@ -263,6 +263,7 @@ void LinkedList::end()
     }
 
     cout << "The last element is: " << last->data << endl;
+    return last->data;
 }
 #pragma endregion
 
@@ -323,22 +324,38 @@ void LinkedList::printList()
 }
 #pragma endregion
 
-void LinkedList::draw(int screenPos)
+int LinkedList::getAtPos(int position)
 {
-    Node* temp = head;
-    const char* output;
-    string convert;
-    int screenWidth = 50;
-    int screenHeight = screenPos;
+    if (head == NULL || position <= 0) // if list in NULL or invalid position is given
+        return NULL;
 
-    while (temp != NULL)
-    {
-        convert = to_string(temp->data);
-        output = convert.c_str();
-        DrawText(output, screenWidth, screenPos, 15, BLACK);
+    class Node* current = head;
 
-        screenWidth += 10;
-        temp = temp->next;
-    }
-    delete temp;
+    for (int i = 1; current != NULL && i < position; i++) // traverse up to the node at position 'n' from the beginning
+        current = current->next;
+
+    if (current == NULL) // if 'n' is greater than the number of nodes in the doubly linked list
+        return NULL;
+
+    return current->data; // delete the node pointed to by 'current'
 }
+
+//void LinkedList::draw(int screenPos)
+//{
+//    Node* temp = head;
+//    const char* output;
+//    string convert;
+//    int screenWidth = 50;
+//    int screenHeight = screenPos;
+//
+//    while (temp != NULL)
+//    {
+//        convert = to_string(temp->data);
+//        output = convert.c_str();
+//        DrawText(output, screenWidth, screenPos, 15, BLACK);
+//
+//        screenWidth += 10;
+//        temp = temp->next;
+//    }
+//    delete temp;
+//}
